@@ -53,8 +53,8 @@ const tiles = [
 
 const tileContent = (data) => (
   <View>
-    <Text style={styles.itemText}>{data.text}</Text>
-    {data.number && <Text style={styles.itemText}>{data.number}</Text>}
+    <Text>{data.text}</Text>
+    {data.number && <Text>{data.number}</Text>}
   </View>
 );
 
