@@ -1,0 +1,34 @@
+{
+  "name": "@thang2162/react-native-tile-view",
+  "version": "0.0.1",
+  "description": "A utility for creating tile views in react native!",
+  "keywords": [
+    "ios",
+    "android",
+    "tiles",
+    "tile-view",
+    "tileView",
+    "thang2162",
+    "tone",
+    "Tone",
+    "react",
+    "react-native",
+    "javascript",
+    "rn"
+  ],
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://thang2162@github.com/thang2162/react-native-tile-view.git"
+  },
+  "author": "Tone T. Thangsongcharoen <netguy87@gmail.com> (thang2162)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/thang2162/react-native-tile-view/issues"
+  },
+  "homepage": "https://github.com/thang2162/react-native-tile-view#readme",
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x"
+  }
+}
