@@ -1,4 +1,4 @@
-#React Native Tile view
+# React Native Tile view
 
 A utility for creating tile views in React Native.
 
