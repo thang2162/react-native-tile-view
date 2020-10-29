@@ -79,7 +79,7 @@ const tileContent = (data) => (
 
 tpr or tiles per row is required and sets the size of the tiles and can go up to 4 tiles.
 
-touchable is optional and makes the tile in question touchable.
+touchable is optional and makes the tile in question touchable. Callback will return the index of object in the array as well as the object in the data key.
 
 data is optional and where you put data you wish to be available in the tileContent
 
