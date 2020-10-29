@@ -86,6 +86,7 @@ data is optional and where you put data you wish to be available in the tileCont
 ## Custom Styles - Details
 
 To change the main container set styles under the container key in the style Object.
+
 To change the item container set styles under the item key in the style Object.
 
 The style object be initialized through StyleSheet.create() before being set into the customStyle prop. See the example for more details.
