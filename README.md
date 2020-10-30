@@ -36,7 +36,7 @@ yarn add @thang2162/react-native-tile-view
 ## Basic Usage
 
 ```js
-import TextArea from "@thang2162/react-native-tile-view";
+import TileView from "@thang2162/react-native-tile-view";
 
 const tiles = [
   {tpr: 1, touchable: true, data: {text: 'hello', number: 5}},
@@ -58,7 +58,7 @@ const tileContent = (data) => (
   </View>
 );
 
-<Tiles
+<TileView
   tiles={tiles}
   tileContent={tileContent}
 />
