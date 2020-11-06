@@ -1,6 +1,6 @@
 {
   "name": "@thang2162/react-native-tile-view",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "A utility for creating tile views in react native!",
   "keywords": [
     "ios",
@@ -14,7 +14,8 @@
     "react",
     "react-native",
     "javascript",
-    "rn"
+    "rn",
+    "react-native-tile-view"
   ],
   "main": "./lib/index.js",
   "repository": {

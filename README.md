@@ -39,9 +39,9 @@ yarn add @thang2162/react-native-tile-view
 import TileView from "@thang2162/react-native-tile-view";
 
 const tiles = [
-  {tpr: 1, tileHeight: 10, touchable: true, data: {text: 'hello', number: 5}},
-  {tpr: 2, data: {number: 5}},
-  {tpr: 2, touchable: true, data: {text: 'hello'}},
+  {tpr: 1, tileHeight: 200, touchable: true, data: {text: 'hello', number: 5}},
+  {tpr: 2, tileHeight: 200, data: {number: 5}},
+  {tpr: 2, tileHeight: 200, touchable: true, data: {text: 'hello'}},
   {tpr: 3, data: {number: 5}},
   {tpr: 3, touchable: true, data: {text: 'hello'}},
   {tpr: 3, data: {text: 'hello', number: 5}},
