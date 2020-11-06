@@ -17,7 +17,7 @@ const wait = (timeout) => {
 };
 
 const tiles = [
-  {tpr: 1, tileHeight: 200, touchable: true, data: {text: 'hello', number: 5}},
+  {tpr: 1, tileHeight: 200, touchable: true, tileStyle: styles.itemCustom, data: {text: 'hello', number: 5}},
   {tpr: 2, tileHeight: 200, data: {number: 5}},
   {tpr: 2, tileHeight: 200, touchable: true, data: {text: 'hello'}},
   {tpr: 3, data: {number: 5}},
@@ -72,6 +72,13 @@ const styles = StyleSheet.create({
   },
   item: {
     backgroundColor: 'red',
+    alignSelf: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  itemCustom: {
+    backgroundColor: 'blue',
     alignSelf: 'flex-start',
     alignItems: 'center',
     justifyContent: 'center',

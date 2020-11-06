@@ -83,6 +83,8 @@ touchable is optional and makes the tile in question touchable. Callback will re
 
 tileHeight is optional and allows you to set the height of each tile.
 
+tileStyle is optional and allows you to overwrite the item container style for the tile.
+
 data is optional and where you put data you wish to be available in the tileContent
 
 ## Custom Styles - Details
