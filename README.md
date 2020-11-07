@@ -77,7 +77,7 @@ const tileContent = (data) => (
 
 ## Tiles - Object Structure Details
 
-tpr or tiles per row is required and sets the size of the tiles and can go up to 4 tiles.
+tpr or tiles per row is required and sets the size of the tiles.
 
 touchable is optional and makes the tile in question touchable. Callback will return the index of object in the array as well as the object in the data key.
 

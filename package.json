@@ -1,6 +1,6 @@
 {
   "name": "@thang2162/react-native-tile-view",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A utility for creating tile views in react native!",
   "keywords": [
     "ios",
