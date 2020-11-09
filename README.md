@@ -1,6 +1,10 @@
 # React Native Tile View
 
-A utility for creating tile views in React Native.
+[![A utility for creating tile views in react native!](https://img.shields.io/badge/-A%20utility%20for%20creating%20tile%20views%20in%20react%20native!-lightgrey)](https://github.com/thang2162/react-native-tile-view)
+
+[![npm version](https://img.shields.io/npm/v/@thang2162/react-native-tile-view.svg?style=for-the-badge)](https://www.npmjs.com/package/@thang2162/react-native-tile-view)
+
+[![npm](https://img.shields.io/npm/dt/@thang2162/react-native-tile-view.svg?style=for-the-badge)](https://www.npmjs.com/package/@thang2162/react-native-tile-view)
 
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
 
@@ -68,12 +72,13 @@ const tileContent = (data) => (
 
 | Property               |  Type    |    Default     | Description                               |
 | --------------------   | :----:   | :------------: | ----------------------------------------- |
-| customStyle            | style    | check the code | Set your own style                        |
+| customStyle            | style    |                | Set your own style                        |
 | showChildren           | boolean  |  true or false | Show child slot content instead of tiles  |
 | tileContent - required | jsx      |                | Set the template for your tiles           |
 | tiles - required       | array    |       []       | Object array containing tile data         |
 | onTileTouch            | callback |                | Callback for touchable tiles              |
 | refreshControl         | jsx      |                | Set a Refresh Control for pull to refresh |
+| tileSize               | number   |        1       | Resize your tiles                         |
 
 ## Tiles - Object Structure Details
 
@@ -83,7 +88,7 @@ touchable is optional and makes the tile in question touchable. Callback will re
 
 tileHeight is optional and allows you to set the height of each tile.
 
-tileStyle is optional and allows you to overwrite the item container style for the tile.
+tileStyle is optional and allows you to override the default tile style of each tile. tileStyle must be initialized through StyleSheet.create().
 
 data is optional and where you put data you wish to be available in the tileContent
 
@@ -91,9 +96,9 @@ data is optional and where you put data you wish to be available in the tileCont
 
 To change the main container set styles under the container key in the style Object.
 
-To change the item container set styles under the item key in the style Object.
+To change the item container set styles under the tile key in the style Object.
 
-The style object be initialized through StyleSheet.create() before being set into the customStyle prop. See the example for more details.
+The style object must be initialized through StyleSheet.create() before being set into the customStyle prop. See the example for more details.
 
 ## Author
 

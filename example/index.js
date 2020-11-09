@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 30,
+    marginTop: 20,
   },
-  item: {
+  tile: {
     backgroundColor: 'red',
     alignSelf: 'flex-start',
     alignItems: 'center',
@@ -79,13 +79,6 @@ const tiles = [
   {tpr: 7, data: {text: 'hello'}},
   {tpr: 7, data: {text: 'hello'}},
   {tpr: 7, data: {text: 'hello', number: 5}},
-  {tpr: 7, data: {text: 'hello'}},
-  {tpr: 7, data: {text: 'hello'}},
-  {tpr: 7, data: {text: 'hello', number: 5}},
-  {tpr: 7, data: {number: 5}},
-  {tpr: 7, data: {text: 'hello'}},
-  {tpr: 7, data: {text: 'hello'}},
-  {tpr: 7, data: {text: 'hello', number: 5}},
   {tpr: 8, data: {text: 'hello'}},
   {tpr: 8, data: {text: 'hello'}},
   {tpr: 8, data: {text: 'hello', number: 5}},
@@ -123,6 +116,19 @@ const tiles = [
   {tpr: 11, data: {text: 'hello'}},
   {tpr: 11, data: {text: 'hello'}},
   {tpr: 11, data: {text: 'hello', number: 5}},
+  {tpr: 11, data: {text: 'hello', number: 5}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello', number: 5}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello', number: 5}},
+  {tpr: 12, data: {number: 5}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello'}},
+  {tpr: 12, data: {text: 'hello', number: 5}},
+  {tpr: 12, data: {text: 'hello', number: 5}},
 ];
 
 const tileContent = (data) => (
@@ -132,13 +138,11 @@ const tileContent = (data) => (
   </View>
 );
 
-const TileView = (props) => {
+const TileView = () => {
   const [refreshing, setRefreshing] = React.useState(false);
 
-  const handleTileTap = (index, obj) => {
-    if (index === 0) {
-      props.navigation.navigate('SplashScreen');
-    }
+  const handleTileTap = (ind, obj) => {
+    console.log(ind, obj)
   };
 
   const onRefresh = React.useCallback(() => {
@@ -151,6 +155,7 @@ const TileView = (props) => {
     <SafeAreaView>
       <Tiles
         tiles={tiles}
+        tileSize={.5}
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
